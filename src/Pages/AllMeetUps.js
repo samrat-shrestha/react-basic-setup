@@ -28,7 +28,8 @@ function AllMeetupsPage(){
   useEffect(()=>{
     setIsLoading(true);
     //if there is use of props here then we add that to the dependency array of useEffect().
-    fetch('https://medical-3391201-344414-default-rtdb.firebaseio.com/reactmeetups.json')
+    //fetch('http://localhost:5000/meetups') 
+    fetch('https://medical-3391201-344414-default-rtdb.firebaseio.com/reactmeetups.json') 
     .then((response)=>{
       return response.json();
     }).then((data)=>{
